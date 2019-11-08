@@ -1,0 +1,6 @@
+<div>container start</div>
+<ng-container #container></ng-container>
+<ng-container [ngTemplateOutlet]="template" ></ng-container>
+<div>container end</div>
+<ng-template #template >test</ng-template>
+<div (click)="click()" >click</div>
