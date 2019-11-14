@@ -6,7 +6,6 @@ import { Component, ViewChild, ViewContainerRef, TemplateRef } from '@angular/co
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-
   @ViewChild('container', { read: ViewContainerRef, static: true })
   vcr: ViewContainerRef;
 
@@ -14,6 +13,6 @@ export class AppComponent {
   template: TemplateRef<any>;
 
   click() {
-    this.vcr.createEmbeddedView(this.template, undefined);
+    this.vcr.createEmbeddedView(this.template, undefined, 0);
   }
 }
